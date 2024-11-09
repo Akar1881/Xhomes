@@ -1,1 +1,29 @@
+name: Xhomes
+version: 2.0
+main: com.xhomes.Xhomes
+api-version: 1.21
 
+commands:
+  sethome:
+    description: "Set a home location."
+    usage: /sethome [homename]
+  home:
+    description: "Teleport to a home location."
+    usage: /home [homename]
+  delhome:
+    description: "Delete a home location."
+    usage: /delhome [homename]
+
+permissions:
+  xhomes.hometier1:
+    description: "Allows the player to set 2 homes."
+    default: true
+  xhomes.hometier2:
+    description: "Allows the player to set 4 homes."
+    default: false
+  xhomes.hometier3:
+    description: "Allows the player to set 6 homes."
+    default: false
+  xhomes.hometier4:
+    description: "Allows the player to set 8 homes."
+    default: false
