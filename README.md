@@ -55,6 +55,6 @@ This project is licensed under the [GPL-3.0-only](https://opensource.org/license
 
 ## Support
 
-For issues, feature requests, or contributions, please visit the [issue tracker](https://github.com/Corwnbot/Xhomes/issues) on Modrinth.
+For issues, feature requests, or contributions, please visit the [issue tracker](https://github.com/Akar1881/Xhomes/issues) on Modrinth.
 
 Elevate your Minecraft gameplay with **Xhomes**—your all-in-one home management solution!
