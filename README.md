@@ -38,7 +38,7 @@
 
 ## Compatibility
 
-- **Minecraft Version**: Java Edition 1.19 - 1.21.3
+- **Minecraft Version**: Java Edition 1.18 - 1.21 and newer
 - **Supported Platforms**: Bukkit, Paper, Spigot
 - **Environment**: Server-side
 
