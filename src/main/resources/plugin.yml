@@ -1,7 +1,7 @@
 name: Xhomes
 version: 2.0
 main: com.xhomes.Xhomes
-api-version: 1.21
+api-version: 1.18
 
 commands:
   sethome:
