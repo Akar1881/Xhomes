@@ -2,28 +2,52 @@ name: Xhomes
 version: 2.0
 main: com.xhomes.Xhomes
 api-version: 1.18
+description: A plugin to manage player homes with permissions for different tiers.
 
 commands:
   sethome:
     description: "Set a home location."
-    usage: /sethome [homename]
+    usage: "/sethome [homename]"
+    permission: "xhomes.sethome"  # Added permission for the command
+    permission-message: "You do not have permission to set homes."
+
   home:
     description: "Teleport to a home location."
-    usage: /home [homename]
+    usage: "/home [homename]"
+    permission: "xhomes.home"  # Added permission for the command
+    permission-message: "You do not have permission to teleport to homes."
+
   delhome:
     description: "Delete a home location."
-    usage: /delhome [homename]
+    usage: "/delhome [homename]"
+    permission: "xhomes.delhome"  # Added permission for the command
+    permission-message: "You do not have permission to delete homes."
 
 permissions:
+  xhomes.sethome:
+    description: "Allows the player to set a home."
+    default: true
+
+  xhomes.delhome:
+    description: "Allows the player to delete a home."
+    default: true
+
+  xhomes.home:
+    description: "Allows the player to teleport to their homes."
+    default: true
+
   xhomes.hometier1:
     description: "Allows the player to set 2 homes."
     default: true
+
   xhomes.hometier2:
     description: "Allows the player to set 4 homes."
     default: false
+
   xhomes.hometier3:
     description: "Allows the player to set 6 homes."
     default: false
+
   xhomes.hometier4:
     description: "Allows the player to set 8 homes."
     default: false

@@ -1,14 +1,16 @@
 # Configuration for Xhomes plugin
-# Max homes limit is 8. Do not set maxhomes above 8!
+# Max homes limit is 8. Please do not set maxhomes above 8!
 
+# Warning message displayed to players if they exceed the max homes limit
 max_homes_warning: "Max homes is 8. Please do not set maxhomes above this limit."
 
+# Configuration for home tiers and their respective limits
 home_tiers:
   xhomes.hometier1:
-    maxhomes: 2
+    maxhomes: 2  # Maximum homes for tier 1
   xhomes.hometier2:
-    maxhomes: 4
+    maxhomes: 4  # Maximum homes for tier 2
   xhomes.hometier3:
-    maxhomes: 6
+    maxhomes: 6  # Maximum homes for tier 3
   xhomes.hometier4:
-    maxhomes: 8
+    maxhomes: 8  # Maximum homes for tier 4
