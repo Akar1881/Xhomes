@@ -44,7 +44,7 @@
 
 ## Installation
 
-1. Download the latest version of Xhomes from [Modrinth](https://modrinth.com/plugin/xhomes).
+1. Download the latest version of Xhomes from [Modrinth](https://modrinth.com/plugin/xhomes) || [SpigotMC)(https://www.spigotmc.org/resources/xhomes.120062/).
 2. Place the downloaded `.jar` file into the `plugins` folder of your Minecraft server.
 3. Restart the server to enable the plugin.
 4. Configure the plugin settings in the `config.yml` file located in the `Xhomes` folder.
