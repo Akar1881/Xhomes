@@ -8,7 +8,6 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class SetHomeCommand implements CommandExecutor {
     private final HomeManager homeManager;
@@ -66,11 +65,18 @@ public class SetHomeCommand implements CommandExecutor {
     }
 
     private int getMaxHomesForPlayer(Player player) {
-        for (String permission : plugin.getConfig().getConfigurationSection("home_tiers").getKeys(false)) {
-            if (player.hasPermission(permission)) {
-                return plugin.getConfig().getInt("home_tiers." + permission + ".maxhomes");
-            }
+        if (player.hasPermission("xhomes.hometier4")) {
+            return plugin.getConfig().getInt("home_tiers.xhomes.hometier4.maxhomes");
         }
-        return -1; // No valid permission found
+        if (player.hasPermission("xhomes.hometier3")) {
+            return plugin.getConfig().getInt("home_tiers.xhomes.hometier3.maxhomes");
+        }
+        if (player.hasPermission("xhomes.hometier2")) {
+            return plugin.getConfig().getInt("home_tiers.xhomes.hometier2.maxhomes");
+        }
+        if (player.hasPermission("xhomes.hometier1")) {
+            return plugin.getConfig().getInt("home_tiers.xhomes.hometier1.maxhomes");
+        }
+        return -1; // No permission found
     }
 }

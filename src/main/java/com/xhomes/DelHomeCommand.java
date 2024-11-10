@@ -27,6 +27,14 @@ public class DelHomeCommand implements CommandExecutor {
         }
 
         String homeName = args[0];
+
+        // Check if the home exists
+        if (!homeManager.getHomes(player.getName()).containsKey(homeName)) {
+            player.sendMessage("Home '" + homeName + "' not found in your data.");
+            return true;
+        }
+
+        // Remove the home
         homeManager.removeHome(player.getName(), homeName);
         player.sendMessage("Home '" + homeName + "' deleted.");
         return true;
