@@ -44,13 +44,13 @@ public class HomeCommand implements CommandExecutor {
         }
 
         // If no home name is provided, show the home selection inventory
-        Inventory inv = Bukkit.createInventory(null, 9, "Select Home");
+        Inventory inv = Bukkit.createInventory(null, 27, "Select Home");
 
         Map<String, Location> homes = homeManager.getHomes(player.getName());
 
-        int slot = 0;
+        int slot = 9;
         for (String homeName : homes.keySet()) {
-            if (slot >= 8) break;
+            if (slot >= 18) break;
             ItemStack bedItem = new ItemStack(Material.BLUE_BED);
             ItemMeta meta = bedItem.getItemMeta();
             if (meta != null) {
@@ -61,7 +61,7 @@ public class HomeCommand implements CommandExecutor {
             inv.setItem(slot++, bedItem);
         }
 
-        inv.setItem(8, new ItemStack(Material.BARRIER));
+        inv.setItem(26, new ItemStack(Material.BARRIER));
 
         player.openInventory(inv);
         return true;

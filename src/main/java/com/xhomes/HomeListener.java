@@ -27,12 +27,12 @@ public class HomeListener implements Listener {
         Player player = (Player) event.getWhoClicked();
         int slot = event.getSlot();
 
-        if (slot == 8) {
+        if (slot == 26) {
             player.closeInventory(); // Close GUI if barrier is clicked
             return;
         }
 
-        if (slot < 0 || slot >= 8) return; // Only handle slots 0-7
+        if (slot < 9 || slot >= 18) return; // Only handle slots 0-7
 
         String homeName = event.getCurrentItem().getItemMeta().getDisplayName();
         Location homeLocation = homeManager.getHomes(player.getName()).get(homeName);
